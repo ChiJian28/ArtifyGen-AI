@@ -39,7 +39,7 @@ const uploadCloudinary = async (imageArray) => {
         // 上传所有图片到 Cloudinary
         const uploadPromises = imageArray.map(async item => {
             const cloudinaryResponse = await cloudinary.uploader.upload(item.url, {
-                folder: 'Images test', // 替换为你希望的 Cloudinary 文件夹
+                folder: 'Artify Images', // 替换为你希望的 Cloudinary 文件夹
             });
             return cloudinaryResponse.secure_url;
         });
