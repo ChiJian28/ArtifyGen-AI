@@ -2,16 +2,28 @@ require('dotenv').config();
 
 const { Sequelize } = require('sequelize');
 
-// init our database
-const sequelize = new Sequelize({
+// // connect to local db
+// const sequelize = new Sequelize({
+//   dialect: 'postgres',
+//   host: process.env.DB_HOST,
+//   port: process.env.DB_PORT,
+//   username: process.env.DB_USER,
+//   password: process.env.DB_PASSWORD,
+//   database: process.env.DB_DATABASE,
+//   dialectOptions: {
+//     ssl: false,
+//   },
+// });
+
+// connect to vercel db (cloud)
+const sequelize = new Sequelize(process.env.POSTGRES_URL, {
   dialect: 'postgres',
-  host: process.env.DB_HOST,
-  port: process.env.DB_PORT,
-  username: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_DATABASE,
+  dialectModule: pg, // 添加这一行
   dialectOptions: {
-    ssl: false,
+      ssl: {
+          require: true,
+          rejectUnauthorized: false, // 忽略 SSL 证书验证（请注意潜在的安全风险）
+      },
   },
 });
 
