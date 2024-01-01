@@ -1,5 +1,5 @@
 # AI Image Generator Application
-Welcome to the AI Image Generator App! This full-stack web app employs the PERN (PostgreSQL, Express.js, React.js, Node.js) stack, Vite.js, and the OpenAI API to craft lifelike images.
+Welcome to the AI Image Generator App! This full-stack web app employs the PERN (PostgreSQL, Express.js, React.js, Node.js) stack, Vite.js, and the OpenAI API to craft lifelike images.The application is accessible to everyone through this [link](https://artify-gen-ai.vercel.app/).
 
 ## Technologies Used
 
