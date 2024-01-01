@@ -4,6 +4,7 @@ const cors = require('cors');
 const imageRoute = require('./routes/imageRoute.js');
 const shareRoute = require('./routes/shareRoute.js');
 require('dotenv').config();
+require('./controllers/createImageController.js')
 
 const { sequelize, connectToDatabase } = require('./db/db'); 
 

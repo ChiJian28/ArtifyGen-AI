@@ -1,5 +1,3 @@
-
-
 type CardProps = {
   e: {
     id: number,

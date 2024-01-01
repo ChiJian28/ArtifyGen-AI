@@ -11,7 +11,7 @@ const Post = sequelize.define('Post', {
     allowNull: false,
   },
   img: {
-    type: DataTypes.ARRAY(DataTypes.JSON),
+    type: DataTypes.ARRAY(DataTypes.STRING), // 修改数据类型为字符串数组
     allowNull: true,
   },
 }, {

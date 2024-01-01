@@ -13,7 +13,11 @@ export const useGetBooks = () => {
     const getAllImages = async () => {
         setLoading(true);
         try {
-            const res = await axios.get('/images');
+            const res = await axios.get('/images', {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
             setUser(res.data);
             setLoading(false);
         } catch (error) {

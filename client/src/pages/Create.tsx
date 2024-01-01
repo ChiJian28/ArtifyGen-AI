@@ -49,6 +49,7 @@ const Create = () => {
         }
       });
       const data = res.data;
+      console.log(data);
       setImg(data);
       setGeneratingImg(false);
       enqueueSnackbar('Generate successfully', { variant: 'success' });
