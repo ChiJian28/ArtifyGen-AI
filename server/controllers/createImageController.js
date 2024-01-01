@@ -15,10 +15,10 @@ cloudinary.config({
 
 const createImage = async (req, res) => {
     try {
-        // const { prompt_user, amount } = req.body;
+        const { prompt_user, amount } = req.body;
         const response = await openai.images.generate({
-            prompt: 'Ironman is flying',
-            n: 2,
+            prompt: prompt_user,
+            n: amount,
             size: '1024x1024',
         });
         const data = response.data;
