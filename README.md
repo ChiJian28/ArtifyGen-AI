@@ -8,6 +8,7 @@ Welcome to the AI Image Generator App! This full-stack web app employs the PERN 
 * React.js: A front-end JavaScript library used to create the user interface and interact with the API.
 * Node.js: A JavaScript runtime environment used for the back-end server.
 * OpenAI API: An artificial intelligence API that generates high-quality images based on user inputs.
+* Cloudinary: An end-to-end image and video management platform that stores generated photos.
 * Vite.js: A build tool that serves the website in development and optimizes the website for production.
 
 
@@ -17,9 +18,10 @@ Welcome to the AI Image Generator App! This full-stack web app employs the PERN 
 3. User clicks the "Generate" button
 4. The application sends a request to the OpenAI API with the specified parameters
 5. The OpenAI API generates a high-quality image based on the parameters
-6. The application stores the image URL in PostgreSQL
-7. User can choose to share with the community by clicking the "share" button
-8. The application displays the generated image to the user at the Home page.
+6. The application stores the generated image in Cloudinary and retrieves the image URL
+7. The application stores the image URL in PostgreSQL
+8. User can choose to share with the community by clicking the "share" button
+9. The application displays the generated image to the user at the Home page.
 
 ## Previews
 ![Create Page](https://github.com/ChiJian28/ArtifyGen-AI/assets/109941092/2bbc31d8-cbf4-4477-ba03-8966b81877fb)
