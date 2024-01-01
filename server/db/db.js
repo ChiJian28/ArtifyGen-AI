@@ -1,5 +1,5 @@
 require('dotenv').config();
-
+const pg = require('pg');
 const { Sequelize } = require('sequelize');
 
 // // connect to local db
