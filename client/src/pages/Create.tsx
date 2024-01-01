@@ -49,8 +49,8 @@ const Create = () => {
         }
       });
       const data = res.data;
-      const imageArray = { data };
-      setImg(imageArray);
+      const imageUrls = data.uploadedUrls
+      setImg(imageUrls);
       setGeneratingImg(false);
       enqueueSnackbar('Generate successfully', { variant: 'success' });
     } catch (error) {
