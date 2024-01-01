@@ -13,7 +13,7 @@ const Card: React.FC<CardProps> = ({ e }) => (
       <div className="h-[500px] overflow-y-scroll">
         {e.img.map((x: any, index: any) => (
           <div key={index} className="">
-            <img src={x.url} alt={`image for prompt ${e.prompt_user}`} className="w-full h-full object-contain" />
+            <img src={x} alt={`image for prompt ${e.prompt_user}`} className="w-full h-full object-contain" />
           </div>
         ))}
       </div>

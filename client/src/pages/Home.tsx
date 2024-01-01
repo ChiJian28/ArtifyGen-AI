@@ -8,7 +8,6 @@ import useGetImages from "../hooks/useGetImages";
 const Home = () => {
     const [search, setSearch] = useState('');
     const { user, loading } = useGetImages();
-    console.log(user);
     return (
         <div>
             <Navbar />

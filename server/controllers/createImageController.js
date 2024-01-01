@@ -23,10 +23,8 @@ const createImage = async (req, res) => {
         });
         const data = response.data;
 
-        // 上传到 Cloudinary
+        // 上传到 Cloudinary（openai 把图片stored 在他们自己的server，过一段时间你就不能access了，所以要把图片变成你自己的，用cloudinary来store）
         const uploadedUrls = await uploadCloudinary(data);
-
-        // console.log('Uploaded to Cloudinary:', uploadedUrls);
         return res.status(201).send({ uploadedUrls });
     } catch (error) {
         console.error(error);
