@@ -29,6 +29,8 @@ Welcome to the AI Image Generator App! This full-stack web app employs the PERN 
 ![Home Page with scrolling multiple images in a frame](https://github.com/ChiJian28/ArtifyGen-AI/assets/109941092/16199a56-f53b-43e6-9d5a-491829ec8e96)
 ![Home Page with search function](https://github.com/ChiJian28/ArtifyGen-AI/assets/109941092/47358598-6430-41d5-8310-b0894db48ceb)
 
+# License
+This project is licensed under the [MIT License](https://opensource.org/license/mit/).
 
 # Summary
 👉 If you like this project, give it a star ✨ and share 👨🏻‍💻 it to your friends 👈  
